@@ -1,0 +1,33 @@
+1. Permission error to /tmp/finn_dev_inets
+	Changed the permssions using this:
+	check user permissions: ls -l directory-name
+	change user/owner: sudo chown -R $(id -u):$(id -g) directory-name
+	allow permissions: sudo chmod -R 777 directory-name
+
+2. vitis tools not mounted on the docker container (or docker run error: read-only file system):
+	changed the installation to /opt/Xilinx. Then root file system read-only error appeared. The issue was with docker and then followed this discussion:
+	https://support.xilinx.com/s/question/0D52E00006hpNKfSAM/docker-run-error-readonly-file-system?language=en_US
+	I think the issue was also with docker for /tools/Xilinx.
+	
+	The content of the discussion we needed is:
+	"I had the same issue on VCK5000/Ubuntu22.04.
+	I installed docker with apt and got the same error, so I checked and it seems that the snap version of docker daemon is running first.
+	So,
+	sudo snap remove docker --purge
+	sudo reboot
+	Then, docker_run.sh was successfully executed.
+	By the way, in my case, if I did not add the purge option to snap remove, the process did not finish forever."
+	
+3. --> The error was stating that a port 8081 is already in use. What I did was:
+
+	Run this command: sudo lsof -i :8081
+	I got this as the output:
+	COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
+	motion 931 motion 5u IPv4 21958 0t0 TCP localhost:tproxy (LISTEN)
+	So, I had to stop the command 'motion'. Either one of the following can be used:
+	sudo service stop motion (This didn't work for me.)
+	sudo systemctl stop motion (This worked.)
+	After this I ran './run-docker.sh notebook' and the notebook is opened.
+
+	Detailed discussion on this issue is here: https://stackoverflow.com/questions/69899466/error-starting-userland-proxy-listen-tcp4-0-0-0-080-bind-address-already-in
+	Probably have to do this everytime after a reboot. 
