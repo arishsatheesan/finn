@@ -31,3 +31,11 @@
 
 	Detailed discussion on this issue is here: https://stackoverflow.com/questions/69899466/error-starting-userland-proxy-listen-tcp4-0-0-0-080-bind-address-already-in
 	Probably have to do this everytime after a reboot. 
+	
+--> Error - cycle-free graph:
+	
+	refer to this: https://github.com/Xilinx/finn/discussions/431
+	These are also useful:
+				https://github.com/Xilinx/finn/issues/955
+				https://github.com/Xilinx/finn/issues/579
+				

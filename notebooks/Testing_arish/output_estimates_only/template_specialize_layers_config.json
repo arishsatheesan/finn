@@ -1,0 +1,30 @@
+{
+  "Defaults": {},
+  "ConvolutionInputGenerator_0": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_0": {
+    "preferred_impl_style": ""
+  },
+  "StreamingMaxPool_0": {
+    "preferred_impl_style": ""
+  },
+  "ConvolutionInputGenerator_1": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_1": {
+    "preferred_impl_style": ""
+  },
+  "StreamingMaxPool_1": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_2": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_3": {
+    "preferred_impl_style": ""
+  },
+  "MVAU_4": {
+    "preferred_impl_style": ""
+  }
+}

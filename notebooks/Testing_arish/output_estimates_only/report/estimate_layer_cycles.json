@@ -1,0 +1,11 @@
+{
+  "ConvolutionInputGenerator_rtl_0": 1026,
+  "MVAU_hls_0": 2352,
+  "StreamingMaxPool_hls_0": 980,
+  "ConvolutionInputGenerator_rtl_1": 198,
+  "MVAU_hls_1": 2000,
+  "StreamingMaxPool_hls_1": 125,
+  "MVAU_hls_2": 1920,
+  "MVAU_hls_3": 2016,
+  "MVAU_hls_4": 840
+}
