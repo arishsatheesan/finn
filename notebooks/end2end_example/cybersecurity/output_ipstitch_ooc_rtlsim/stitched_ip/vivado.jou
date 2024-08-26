@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Aug 20 14:35:51 2024
+# Process ID: 34179
+# Current directory: /tmp/finn_dev_inets/vivado_stitch_proj_najvy035
+# Command line: vivado -mode batch -source make_project.tcl
+# Log file: /tmp/finn_dev_inets/vivado_stitch_proj_najvy035/vivado.log
+# Journal file: /tmp/finn_dev_inets/vivado_stitch_proj_najvy035/vivado.jou
+# Running On: finn_dev_inets, OS: Linux, CPU Frequency: 4200.000 MHz, CPU Physical cores: 24, Host memory: 67090 MB
+#-----------------------------------------------------------
+source make_project.tcl

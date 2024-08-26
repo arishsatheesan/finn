@@ -1,5 +1,0 @@
-Why use Int32Bias?
-	When you quantize weights and activations to lower bit-widths (like 4-bit or 8-bit), the accumulation during convolution (or matrix multiplication in fully connected layers) typically requires higher precision to avoid overflow and maintain accuracy.
-Quantizing the bias to 32-bit integers ensures that even though the weights and activations are low-precision, the bias is handled with enough precision to minimize any negative effects on the model's performance.
-
-How to add an QuantIdentity is explained in 1-train-mlp-with-brevitas.ipynb file.

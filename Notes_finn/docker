@@ -1,8 +1,0 @@
---> list docker images:docker images
-
---> pull jupyter notebook: docker pull jupyter/base-notebook
---> run notebook: docker run -p 8888:8888 jupyter/base-notebook
-
-
---> For FINN:
-	docker username is the system username. Here it is 'inets'
